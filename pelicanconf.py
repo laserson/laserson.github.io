@@ -2,13 +2,19 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'Uri Laserson'
-SITENAME = u"Uri Laserson's Home Page"
-SITEURL = ''
+AUTHOR = 'Uri Laserson'
+SITENAME = 'Uri Laserson'
+SITEURL = 'http://laserson.org'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'US/Pacific'
+DEFAULT_LANG = 'en'
+DEFAULT_DATE_FORMAT = '%Y %B %d'
 
-DEFAULT_LANG = u'en'
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{slug}/index.html'
+AUTHORS_SAVE_AS = False
+
+THEME = 'theme'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -16,10 +22,7 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS =  (('Elizabeth C Moran', 'http://elizabethcmoran.com/'),)
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -28,4 +31,4 @@ SOCIAL = (('You can add links in your config file', '#'),
 DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True

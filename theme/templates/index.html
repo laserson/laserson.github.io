@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if articles %}
+<div class="container">
+    {% for article in articles %}
+    <div class="row">
+        <div class="col-md-7 col-md-offset-1"> {{ article.title }} </div>
+        <div class="col-md-2 col-md-offset-2"> {{ article.date }} </div>
+    </div>
+    {% endfor %}
+</div>
+{%endif%}
+
+{% endblock %}
